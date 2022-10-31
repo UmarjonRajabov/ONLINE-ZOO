@@ -1,1 +1,1 @@
-UmarjonRajabov.github.io
+https://umarjonrajabov.github.io/online-zoo/online-zoo/
