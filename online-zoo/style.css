@@ -6,13 +6,12 @@ html {
   font-size: 10px;
 }
 body {
-  background-color: transparent;
-  font-family: Roboto, Verdana, sans-serif;
   font-size: 1.6rem;
   line-height: 140%;
   font-weight: 400;
   color: #000;
-  
+  background-color: transparent;
+  font-family: Roboto, Verdana, sans-serif;
 }
 ._lock {
   overflow: hidden;
@@ -29,7 +28,7 @@ footer {
 }
 .active-menu-item {
   cursor: default;
-  background: linear-gradient(112.95deg, #f9804b 1.49%, #fe9013 101.44%);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -39,7 +38,7 @@ nav a {
 }
 nav a:hover,
 .logo:hover {
-  background: linear-gradient(112.95deg, #f9804b 1.49%, #fe9013 101.44%);
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,22 +54,20 @@ button {
   line-height: 140%;
 }
 .button1 {
+  width: 100%;
+  max-width: 298px;
+  font-weight: 500;
   color: #fff;
   border-radius: 25px;
   padding: 16px 1px 16px 5px;
+}
+.button2 {
   width: 100%;
   max-width: 298px;
   font-weight: 500;
-  
-}
-.button2 {
   color: #fff;
   border-radius: 5px;
   padding: 16px 1px 16px 5px;
-  width: 100%;
-  max-width: 298px;
-  font-weight: 500;
- 
 }
 .button3 {
   font-weight: 400;
@@ -133,17 +130,16 @@ header .wrapper {
   justify-content: space-between;
 }
 .logo {
-  line-height: 23px;
-  display: inline-block;
-  padding: 2px;
-  position: relative;
   width: 82px;
   border: 1px solid #fff;
   border-radius: 2px;
   font-weight: 400;
   font-size: 1.9rem;
   line-height: 120%;
-  
+  line-height: 23px;
+  display: inline-block;
+  padding: 2px;
+  position: relative;
 }
 .logo:before {
   position: absolute;
@@ -185,12 +181,12 @@ header .wrapper {
   margin-top: -80px;
 }
 .watch::before {
+  position: absolute;
+  content: '';
   width: 100%;
   height: 780px;
   left: 0;
   top: 0;
-  position: absolute;
-  content: '';
   background: url(./assets/images/panda_bg.jpg) 50% no-repeat;
   background-size: cover;
   z-index: -1;
@@ -643,6 +639,30 @@ header .wrapper {
 .monkey {
   background: url(./assets/icons/monkey_icon.svg) 50% no-repeat;
 }
+.step_donation {
+  height: 168px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.turt {
+  background: url(./assets/icons/number_four.png) 50% no-repeat;
+}
+.x {
+  background: url(./assets/icons/x_icon.svg) 50% 55% no-repeat;
+}
+.panda {
+  background: url(./assets/icons/panda_icon.png) 50% no-repeat;
+  background-size: 100% 100%;
+}
+.backstage_input {
+  background: url(./assets/images/slowder.png);
+}
+
+.input-box {
+  margin: 30px 0 30px 0;
+
+}
+
 .step_img {
   width: 168px;
   height: 168px;
@@ -945,6 +965,37 @@ header .wrapper {
 .email + button:active {
   border: 1px solid #4b9200;
   color: #4b9200;
+}
+.amount {
+  box-sizing: border-box;
+  background: transparent;
+  margin-right: 6px;
+  height: 42px;
+  color: #bdbdbd;
+  padding: 0 9px;
+  width: 228px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+  position: relative;
+  outline: none;
+}
+.amount:invalid {
+  border: 1px solid #d31414;
+}
+.amount:active {
+  border: 1px solid #4b9200;
+}
+.amount:invalid:focus + button {
+  border: 1px solid #d31414;
+  color: #d31414;
+}
+.amount + button:active {
+  border: 1px solid #4b9200;
+  color: #4b9200;
+}
+.select input{
+  margin: 15px 5px 15px 5px;
 }
 .social li {
   margin-top: 11px;
